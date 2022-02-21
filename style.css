@@ -1,0 +1,96 @@
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+}
+
+.cartoes{
+    display: flex;
+}
+
+.cartao-sedans{
+    width: 305px;
+    height: 505px;
+    background-color: hsl(31, 77%, 52%);
+    border: 0px solid lightgrey;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.cartao-suvs{
+    width: 305px;
+    height: 505px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cartao-luxury{
+    width: 305px;
+    height: 505px;
+    background-color:hsl(179, 100%, 13%);
+    border: 0px solid lightgrey;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 46px;
+    height: 70%;
+}
+
+.conteudo h1{
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.conteudo p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cartoes button{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1em;
+    width: 135px;
+    margin-top: 5em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+#button-sedans{color: hsl(31, 77%, 52%);}
+#button-suvs{color: hsl(184, 100%, 22%);}
+#button-luxury{color: hsl(179, 100%, 13%);}
+
+#button-sedans:hover{background-color: hsl(31, 77%, 52%);color: white;}
+#button-suvs:hover{background-color: hsl(184, 100%, 22%);color: white;}
+#button-luxury:hover{background-color: hsl(179, 100%, 13%);color: white;}
+
+@media screen and (max-width: 480px){
+    .cartoes{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        height: auto;
+        margin: 40px;
+    }
+    .cartao-sedans{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .cartao-suvs{
+       border-radius: 0px;
+    }
+    
+    .cartao-luxury{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
